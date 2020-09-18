@@ -1,0 +1,7 @@
+.MainContent {
+    width: 63rem;
+    min-height: 100vh;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}

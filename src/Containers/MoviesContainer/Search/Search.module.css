@@ -1,0 +1,41 @@
+.Search {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.4rem;
+}
+
+.Helper {
+    width: 25%;
+    min-height: 100vh
+}
+.Helper2 {
+    width:50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 10px;
+    font-size: 300%;
+    color: #ffab00;
+    transition: color 0.3s;
+}
+
+.Helper2:hover {
+    color: #eee;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .Helper2 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .Helper {
+        display: none;
+    }
+}

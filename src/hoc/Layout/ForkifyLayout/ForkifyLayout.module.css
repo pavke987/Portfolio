@@ -1,0 +1,30 @@
+.Layout {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #655A56;
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+}
+@media only screen and (max-width: 1024px) {
+    .Layout {
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+}
+
+/*small phones: from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+
+}

@@ -1,0 +1,48 @@
+.DayNightBtn {
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #343434;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.IconHolder {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Selected {
+    background-color: #f1f1f1;
+}
+
+.IconSun {
+   height: 2rem;
+   width: 2rem;
+   fill: #fff;
+   transition: all .3s;
+}
+.IconMoon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #fff;
+    transition: all .3s;
+}
+
+.SelectedIcon {
+    fill: var(--color-text-4);
+}
+
+svg {
+    pointer-events: none;
+}
+
+path {
+    pointer-events: none;
+}

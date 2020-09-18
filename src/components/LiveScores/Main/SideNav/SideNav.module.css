@@ -1,0 +1,14 @@
+.SideNav {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 17rem;
+    background-color: var(--color-background-5);
+}
+
+@media (max-width: 768px) {
+    .SideNav {
+        display: none;
+    } 
+}

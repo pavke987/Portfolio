@@ -1,0 +1,71 @@
+.Ideas {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 80%;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 5px #fa7d09;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.Ideas div {
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        margin: 10px 20px;
+        border: 1px solid #ccc;
+        padding: 8px 13px;
+        box-shadow: 1px 3px 5px #fa7d09;
+        width: 80%;
+}
+
+.Ideas p {
+    margin-right: 30px;
+}
+
+.Ideas span {
+    color: #fa7d09;
+    margin-right: 10px;
+} 
+
+.ShowButton {
+    padding: 0 1rem;
+    font-size: 20px;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    height: 30px;
+    margin: 0 30px;
+    border-radius: 300px; 
+    border: 2px solid #fa7d09;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.ShowButton:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #fa7d09;
+}
+
+
+@media (max-width: 1100px) {
+    .Ideas {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Ideas div {
+        flex-direction: column;
+    }
+
+    .Ideas p {
+        margin: 10px 0;
+    }
+
+    .Ideas button {
+        margin: 10px 0;
+    }
+}

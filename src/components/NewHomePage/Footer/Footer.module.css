@@ -1,0 +1,97 @@
+.Footer {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(2, 2, 2);
+    background-image: linear-gradient( 
+        138deg, 
+        rgba(197, 71, 66, 0.1) 25%,
+        rgba(84, 243, 145, 0.1) 25%,
+        rgba(84, 243, 145, 0.1) 50%,
+        rgba(197, 71, 66, 0.1) 50%, 
+        rgba(197, 71, 66, 0.1) 75%,
+        rgba(84, 243, 145, 0.1) 75%,
+        rgba(84, 243, 145, 0.1) 100%);
+    background-size: cover;   
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+    margin-top: -5rem;
+    color: #eee;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.Content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3.5rem;
+    letter-spacing: .3rem;
+    margin-top: 5rem;
+}
+
+.Containers {
+    display: flex;
+    width: 33.33333333%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Info {
+    list-style: none;
+}
+.Icon {
+    height: 2rem;
+    margin:.4rem 1rem;
+}
+
+.IconPhone {
+    filter: invert(100%);
+}
+
+.Item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+
+
+.Social {
+    list-style: none;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .Footer {
+        margin-top: -8rem;
+    }
+}
+
+@media (max-width: 600px) {
+   .Content {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .Containers {
+    width: 100%;
+ 
+}
+
+   .Info {
+    margin-top: 3rem;
+}
+}
+
+@media (max-width: 500px) {
+    .Footer {
+        margin-top: -12rem;
+        
+    }
+}

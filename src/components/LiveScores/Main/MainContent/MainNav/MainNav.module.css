@@ -1,0 +1,16 @@
+.MainNav {
+    display: flex;
+    flex-direction: column;
+    height: 3.6rem;
+    background-color: var(--color-white);
+}
+
+.NavItems {
+    display: flex;
+    height: 100%;
+}
+
+.AfterLine {
+    height: .5rem;
+    background-color: var(--color-sport-secondary-body);
+}

@@ -1,0 +1,10 @@
+.SelectedMovie {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    min-height: 79vh;
+    margin: 0 20px;
+    border:2px solid #eee;
+    color: #fff;
+}

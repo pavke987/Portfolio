@@ -1,0 +1,34 @@
+.TextArea {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-height: 80%;
+    width: 80%;
+    margin-top: 50px;
+}
+.TextArea label {
+    font-size: 140%;
+    color:  #fa7d09;
+}
+.TextArea textarea {
+    padding: 30px 30px;
+    margin-top: 30px;
+    font-size: 18px;
+    min-width: 70%; 
+    min-height: 80%;
+    max-width: 90%;
+    outline-color: #fa7d09;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .TextArea {
+        margin-top: 0;
+        width: 90%;
+        min-height: 60%;
+    }
+
+    .TextArea textarea {
+        min-height: 50%;
+    }
+}

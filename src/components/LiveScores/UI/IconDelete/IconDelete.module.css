@@ -1,0 +1,37 @@
+.IconHolder {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.IconDelete {
+    margin-right: .5rem;
+    fill: var(--color-text-2);
+    height: 1.8rem;
+    transition: all .3s;
+    cursor: pointer;
+    pointer-events: stroke;
+}
+
+path {
+    pointer-events: none;
+}
+
+
+.IconDelete:hover {
+    transform: scale(1.1);
+    fill: var(--color-text-1);
+}
+
+.ToolTipContainer {
+    width: 30rem;
+    position: absolute;
+    top: 2.2rem;
+    left: -2rem;
+    z-index: 10;
+    display: none;
+}
+
+.IconDelete:hover + .ToolTipContainer {
+    display: block;
+}

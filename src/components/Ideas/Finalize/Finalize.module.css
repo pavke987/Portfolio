@@ -1,0 +1,49 @@
+.Finalize {
+    margin: 40px 10px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.Finalize select {
+    margin: 10px 10px;
+    border-color: #fa7d09; 
+    outline: #fa7d09;
+
+}
+
+.Finalize label:first-child {
+    font-size: 150%;
+    color: #fa7d09;
+    margin-bottom: 10px;
+}
+.Finalize button {
+    font-size: 20px;
+    color: #fa7d09;  
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.Finalize textarea {
+    margin-top: 10px;
+    outline-color: #fa7d09;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    height: 150px;
+    padding:10px 10px;
+}
+
+@media (max-width: 768px) {
+    .Finalize {
+        margin-top: 0;
+
+    }
+    .Finalize select {
+        min-width: 50px;
+        height: 25px;
+    }
+    .Finalize textarea {
+        height: 70px;
+    }
+}

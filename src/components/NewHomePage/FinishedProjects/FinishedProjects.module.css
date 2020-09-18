@@ -1,0 +1,35 @@
+.FinishedProjects {
+    padding: 5rem 0 ;
+    margin:5rem 0;
+    width: 100%;
+    background-color: #000;
+    background-image:linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url(../../../assets/background-black.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #eee
+}
+
+.Projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Title {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+@media (max-width: 1000px) {
+    
+}
+
+@media (max-width: 768px) {
+    .Projects {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,26 @@
+.Fixtures {
+    width: 100%;
+    min-height: 100vh;
+    color: var(--color-text-1)
+}
+
+.Text {
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.IconHolder {
+    width: 3rem;
+    display: inline-block;
+    height: 1rem;
+    position: relative;
+}
+
+.Icon {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    fill: var(--color-text-1);
+}

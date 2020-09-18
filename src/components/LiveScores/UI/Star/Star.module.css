@@ -1,0 +1,62 @@
+.LeagueIcon {
+    display: inline-block;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.LeagueIcon:title {
+    background-color: yellow;
+}
+
+.LeagueIcon::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+}
+.LeagueIcon, .LeagueIcon::after {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.Border {
+    background-color: var(--color-text-2);
+}
+
+.BorderYelow {
+    background-color: var(--color-yelow);
+}
+
+.Border:after {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+}
+
+.LeagueIcon:hover {
+    background-color: var(--color-text-1);
+}
+
+.IconContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ToolTipContainer {
+    font-size: 1.1rem;
+    width: 30rem;
+    position: absolute;
+    top: 2.2rem;
+    left: 0rem;
+    z-index: 10;
+    display: none;
+}
+
+.LeagueIcon:hover + .ToolTipContainer {
+    display: block;
+}

@@ -1,0 +1,38 @@
+.StickyNav {
+    max-width: inherit;
+    width: inherit;
+    height: 0rem;
+    position: fixed;
+    background-image: linear-gradient( 
+        138deg, 
+        var(--color-yelow) 25%,
+        var(--color-yelow-light) 25%,
+        var(--color-yelow-light) 50%,
+        var(--color-yelow) 50%, 
+        var(--color-yelow) 75%,
+        var(--color-yelow-light) 75%,
+        var(--color-yelow-light) 100%);
+    background-size: cover; 
+    opacity: .9;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .5s .1s;
+}
+.Grow {
+    height: 5rem;
+}
+
+@media (max-width: 1500px) {
+    .StickyNav {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .Grow {
+        height: 6rem;
+    }
+    
+}

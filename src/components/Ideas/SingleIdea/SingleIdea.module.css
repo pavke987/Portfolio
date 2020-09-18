@@ -1,0 +1,106 @@
+.SingleIdea {
+    width: 80%;
+    display: flex;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 5px #fa7d09;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.SingleIdea input, 
+.SingleIdea select {
+    display: inline-block;
+    border: 1px solid #fa7d09;
+    outline-color: #fa7d09;
+}
+
+.SingleIdea label{
+    margin-top: 10px;
+}
+.SingleIdea span {
+    color: #fa7d09;
+}
+
+.Parametars {
+    width: 30%;
+    display: flex;
+    flex-flow: column;
+    font-size: 80%;
+}
+.Buttons {
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+}
+
+.Buttons button {
+    margin: 10px 10px;
+    color: blue;
+    font-size: 150%;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition: color 0.3s;
+}
+
+.Buttons button:first-child {
+    color: green;
+}
+.Buttons button:last-child {
+    color: red;
+}
+
+
+.Buttons button:hover {
+    cursor: pointer;
+    color: #fa7d09;
+}
+
+.Idea {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 90%;
+}
+
+.Idea textarea {
+    border: 1px solid #fa7d09;
+    outline-color: #fa7d09;
+    font-size: 90%;
+    width: 80%;
+    height: 60%;
+    padding: 10px 10px;
+}
+
+.Idea input {
+    font-size: 90%;
+    color: #fa7d09
+}
+
+@media (max-width: 768px ){ 
+    .SingleIdea {
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+    }
+    .SingleIdea p {
+        margin: 5px 0;
+    }
+    .Parametars {
+        width: 80%;
+        align-items: center;
+    }
+    .Idea {
+        width: 90%;
+    }
+    .Buttons {
+        flex-flow: row;
+        margin-top: 20px;
+    }
+    .Idea textarea {
+        height: 200px;
+    } 
+}

@@ -1,0 +1,134 @@
+.Skills {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url("../../../assets/backgrount-5.jpg");
+    background-size: cover;
+}
+
+.Title {
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    margin:5rem;
+}
+
+.Container {
+    display: flex;
+    width: 33.3333333333%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Content {
+    display: flex;
+}
+
+.SubTitle {
+    color: #eee;
+    margin-bottom: 1.5rem;
+}
+
+.Images {
+   width: 25rem;
+    height: auto;
+    opacity: 0;
+    transition: all .3s; 
+    margin-bottom: 10rem;
+}
+
+.Images:last-child {
+    margin-bottom: 26rem;
+}
+.React {
+    transition-delay: 1s;
+}
+
+.Npm {
+    transition-delay: 1.5s; 
+}
+.Redux {
+    transition-delay: 2s; 
+}
+.Js {
+    transition-delay: 2.5s;
+}
+.Html {
+    transition-delay: 3s;
+}
+.Css {
+    transition-delay: 3.5s;
+}
+
+.animate {
+    opacity: 1;
+}
+
+.animateSub {
+    opacity: 0;
+}
+
+.React:hover,
+.Redux:hover {
+    animation: rotate 1s;
+}
+
+.Css:hover,
+.Html:hover,
+.Js:hover,
+.Npm:hover {
+    animation: grow 1s;
+}
+ 
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} 
+
+@media (max-width:768px) {
+    .Images {
+        width: 16rem;
+        margin-bottom: 15rem;
+     }
+
+     .Images:last-child {
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width:500px) {
+    .Images {
+        width: 12rem;
+     }
+}
+@media (max-width:400px) {
+    .Images {
+        width: 10rem;
+     }
+}
+
+
+
+
+
+
+
+
+

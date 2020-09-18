@@ -1,0 +1,169 @@
+.NavButtons {
+    position: absolute;
+    margin: 3rem;
+    top: 0;
+    left: 50%;
+    width: 15rem;
+    text-align: center;
+    transform: translateX(-75%);
+    transition: all 1s;
+    visibility: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+
+.StickyNavButtons {
+    width: 15rem;
+    text-align: center;
+    cursor: pointer;
+}
+.StickyNavButtons:link,
+.StickyNavButtons:visited,
+.LearningRecourses:link,
+.LearningRecourses:visited,
+.FinishedProjects:link,
+.FinishedProjects:visited,
+.Contact:link,
+.Contact:visited,
+.Home:link,
+.Home:visited,
+.Skills:link,
+.Skills:visited {
+    width: 15rem;
+    visibility: visible;
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.StickyNavButtons::after,
+.FinishedProjects::after,
+.LearningRecourses::after,
+.Contact::after,
+.Home::after,
+.Skills::after {
+    content: "";
+    width: 100%;
+    height:1rem;
+    display: block;
+    background-color: yellow;
+    clip-path: polygon(100% 0, 0 0, 50% 80%);
+}
+
+
+ 
+.FinishedProjects {
+    top: 0;
+    left: 98%;
+    transform: translateX(-125%);
+    visibility: visible;
+}
+
+.LearningRecourses {
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.Home {
+    top: 80%;
+    transform: translateX(-70%) translateY(-120%);
+    visibility: visible;
+}
+
+.Skills {
+    top: 50%;
+    left: 27%;
+    transform: translateX(-75%) translateY(-100%);
+    visibility: visible;
+}
+
+.Contact {
+    top:50%;
+    left: 70%;
+    transform: translateX(-50%) translateY(-100%);
+    visibility: visible;
+}
+.active::after {
+    animation: grow 1s infinite;
+    background-color: var(--color-white);
+}
+
+.StickyNavButtons:hover::after,
+.FinishedProjects:hover::after,
+.LearningRecourses:hover::after,
+.Skills:hover::after,
+.Home:hover::after,
+.Contact:hover::after {
+    animation: grow 1s infinite;
+}
+
+@keyframes grow {
+    0% {
+        clip-path: polygon(100% 0, 0 0, 50% 80%);
+    }
+
+    50% {
+        clip-path: polygon(100% 20%, 0 20%, 50% 100%);
+    }
+
+    100% {
+        clip-path: polygon(100% 0, 0 0, 50% 80%);
+    }
+}
+
+@media (max-width: 768px) {
+    .NavButtons {
+        position: absolute;
+        margin: 3rem;
+        top: 0;
+        left: 50%;
+        width: 11rem;
+        text-align: center;
+        transform: translateX(-75%);
+        transition: all 1s;
+        visibility: hidden;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .NavButtons {
+        margin: 2rem 0;
+    }
+    .FinishedProjects {
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    
+    .LearningRecourses {
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        visibility: visible;
+    }
+    
+    .Home {
+        top: 80%;
+        transform: translateX(-50%) translateY(-120%);
+        visibility: visible;
+    }
+    
+    .Skills {
+        top: 50%;
+        left: 30%;
+        transform: translateX(-75%) translateY(-100%);
+        visibility: visible;
+    }
+    
+    .Contact {
+        top:50%;
+        left: 75%;
+        transform: translateX(-50%) translateY(-100%);
+        visibility: visible;
+    }
+}
+
+

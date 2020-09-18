@@ -1,0 +1,18 @@
+.SideDrawerR {
+    display: flex;
+    background-color: white;
+    z-index: 999;
+    width: 50%;
+    position : absolute;
+    top: 100px;
+    min-height: 100%;
+    right: 0;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+    .SideDrawerR {
+        display: none;
+    }
+}

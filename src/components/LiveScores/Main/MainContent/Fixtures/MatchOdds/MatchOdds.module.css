@@ -1,0 +1,61 @@
+.OddsButton {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1px;
+    padding: .3rem;
+    height: 1.8rem;
+    background-color: var(--color-sport-primary);
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.OddsButton:focus {
+    outline: none;
+}
+
+.OddsButton:hover {
+   background-color: var( --color-sport-secondary-body);
+}
+
+.MatchOdds {
+    font-size: 1.1rem;
+    animation: slideIn .3s;
+}
+
+@keyframes slideIn {
+        from {
+          transform: translateX(50%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+}
+
+.Won1,
+.Won2,
+.Draw {
+    font-weight: bold;
+    color: var(--color-white);
+    padding: 0 .2rem;
+}
+
+.Won2,
+.Draw {
+    margin-left: 1rem;
+}
+
+.Won1 {
+   background-color: blue; 
+
+}
+.Won2 {
+    background-color: red;
+}
+.Draw {
+    background-color: green;
+}

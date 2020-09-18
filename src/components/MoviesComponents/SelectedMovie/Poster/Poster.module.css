@@ -1,0 +1,38 @@
+.Poster {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
+}
+
+.Poster img {
+    height: 280px;
+    width: 190px;
+    margin: 10px 10px;
+}
+
+.Text {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    min-height: 300px;
+    width: 90%;
+    margin-left: 30px;
+}
+
+.Text p {
+    width: 80%;
+}
+
+.Poster span {
+    color: #ffab00;
+}
+
+@media (max-width: 768px) {
+    .Poster {
+        flex-flow: column;
+    }
+    .Text p {
+        width: 100%;
+    }
+}

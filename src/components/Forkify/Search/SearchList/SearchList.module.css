@@ -1,0 +1,46 @@
+.SearchList {
+    display: flex;
+    width: 100%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.6),  rgba(0, 0, 0, 0.6)), url('../../../../assets/searchBacground.png');
+    background-size: cover;
+    transition: transform 0.5s ease-out;
+}
+
+.SearchList  ul {
+    margin: 20px 0;
+    padding: 0;
+    min-width: 20%;
+    list-style: none;
+}
+
+.SearchList li {
+    margin: 10px 30px;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 120%;
+    color: #eea79c;
+    transition: color 0.2s;
+    transform: skewY(-8deg);
+}
+
+.SearchList li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.Open {
+    transform: translateX(0px);
+}
+
+.Close {
+    transform: translateX(-100px);
+}
+
+@media (max-width: 768px) {
+    .SearchList li {
+        margin: 10px 5px;
+        font-style: italic;
+        text-transform: capitalize;
+        font-size: 90%;
+    }
+}

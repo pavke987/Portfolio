@@ -1,0 +1,36 @@
+.Search {
+    display: flex;
+    width: 100%;
+    
+}
+
+@media (max-width: 768px) {
+    .Search{
+        transition: transform 0.3s ease-out;
+    }
+    .Search button {
+        margin: 40px 5px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        background-image: linear-gradient(to right bottom, #FBDB89, #F48982);;
+     
+    }
+    .Ismobile {
+        display: none;
+    }
+    .Search ion-icon {
+        font-size: 200%;
+        color: white;
+    }
+
+   .Open {
+       transform: translateX(0);
+   }
+
+   .Close {
+       transform: translateX(-100%)
+   }
+}

@@ -1,0 +1,52 @@
+.Title {
+    width: 80%;
+    margin-top: 20px;
+    min-height: 180px;
+    background-color: #424242;
+   
+}
+
+.Title h1 {
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #00b5ea;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.Title span {
+    color: #eee
+}
+
+.Title h2 {
+    text-transform: uppercase;
+    margin: 0;
+    background-color: #191517;
+    display: inline-block;
+    height: 30px;
+    padding-left: 30px;
+    padding-right: 25px;
+    color: #a5a7aa;
+    font-size: 15px;
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+}
+
+.Title h2::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-left: 25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 0;
+    border-color: #191517 transparent transparent transparent;
+}
+
+.Title p {
+    margin: 20px 25px;
+    color: #ffab00
+}

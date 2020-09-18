@@ -1,0 +1,57 @@
+.SearchResult {
+    min-height: 100%;
+    width: 56%;
+    background-color:  #F9F5F3;;
+}
+
+.SearchResult h1 {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%) skewY(-6deg);
+    color: #fff;
+    font-weight: 700;
+    font-size: 160%;
+    text-transform: uppercase;
+    max-width: 30%;
+    line-height: 1.95;
+    text-align: center; }
+
+.SearchResult span {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone !important;
+    padding: 1.3rem 2rem;
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+}
+
+.SearchResult img {
+    max-width: 100%;
+    min-height: 100%;
+
+}
+@media only screen and (max-width: 1024px) {
+    .SearchResult {
+        width: 50%;
+    }
+
+    .SearchResult span {
+        padding: 1rem 1.5rem;
+    }
+    .SearchResult h1 {
+        font-size: 130%;
+    }
+   
+}
+@media only screen and (max-width: 768px) {
+    .SearchResult {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+  
+
+}

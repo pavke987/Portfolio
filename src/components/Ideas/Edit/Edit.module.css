@@ -1,0 +1,10 @@
+.Edit {
+    width: 90%;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 5px #fa7d09;
+    min-height: 70vh;
+    padding: 10px 10px;
+    margin: 15px 10px;
+    box-sizing: content-box;
+}
+

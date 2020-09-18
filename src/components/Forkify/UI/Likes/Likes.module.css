@@ -1,0 +1,22 @@
+.Likes {
+    height: 100px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.Likes ion-icon {
+    font-size: 200%;
+    color: #F48982;
+    margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+    .Likes {
+        display: none !important;
+        width: 1% !important;
+    }
+   
+}

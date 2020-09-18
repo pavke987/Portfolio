@@ -1,0 +1,162 @@
+.CountryLeague {
+    width: 63rem;
+}
+
+.Title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: var( --color-background-5);
+    height: 2.5rem;
+    border-bottom: 1px solid var(--color-border-5);
+    border-top: 1px solid var(--color-border-5);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-text-1);
+    position: relative;
+}
+
+.SpanCountry {
+    text-transform: uppercase;
+    margin-right: .5rem;
+    
+}
+
+.Image {
+    height: 1.3rem;
+    margin: 0 1rem;
+}
+
+.List {
+    list-style: none;  
+    color: var(--color-text-1);  
+}
+
+.Time {
+    display: flex;
+    align-items: center;
+    width: 9rem;
+    justify-content: space-between;
+}
+
+.Status {
+    margin-left: 1rem;
+}
+
+.Halftime {
+    display: flex;
+    width: 17rem;
+    justify-content: center;
+}
+
+
+
+.ListItem {
+    font-size: 1.1rem;
+    color: inherit;
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--color-border-5) ;
+}
+
+.IconCheck,
+.IconChecked {
+    cursor: pointer;
+}
+
+.IconCheck {
+    fill: var(--color-text-2);
+}
+path {
+    pointer-events: none;
+}
+
+.IconChecked {
+    fill: var(--color-sport-primary)
+}
+
+.Event {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+
+.HomeTeam {
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+}
+
+.AwayTeam {
+    display: flex;
+    width: 33%;
+    justify-content: flex-start;
+}
+
+.Result {
+    margin: 0 2.5rem;
+    color: inherit;
+    font-weight: bold;
+}
+
+.Bold {
+    font-weight: bold;
+}
+
+.Red {
+    color: red;
+}
+
+.ToolTipContainer {
+    width: 30rem;
+    position: absolute;
+    top: 2.2rem;
+    left: 27rem;
+    z-index: 10;
+    display: none;
+}
+
+.IconStar:hover + .ToolTipContainer {
+    display: block;
+}
+.NavLeague {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+}
+
+.NavLeague:hover {
+    color: var(--color-sport-primary);
+    border-bottom: 1px solid currentColor;
+}
+
+@media (max-width: 600px) {
+    .Halftime {
+        width: 10rem
+    }
+
+    .Time {
+        width: 12rem;
+    }
+    .ListItem {
+        width: 100%;
+    }
+    .Event {
+       width: 100%;
+    }
+
+    .HomeTeam,
+    .AwayTeam {  
+        width: 100%; 
+    }  
+}
+
+@media (max-width: 630px) {
+    .CountryLeague {
+        width: 100%;
+    }
+}

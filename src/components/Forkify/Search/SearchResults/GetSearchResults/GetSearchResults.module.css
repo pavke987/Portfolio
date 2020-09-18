@@ -1,0 +1,53 @@
+.GetSearchResults {
+    display:flex;
+    list-style: none; 
+   
+}
+
+.GetSearchResults a {
+    text-decoration: none;
+    display:flex;
+    color: #F59A83;
+}
+
+.GetSearchResults figure,
+.GetSearchResults  h4,
+.GetSearchResults p {
+    margin: 5px 10px;
+   
+}
+
+
+.GetSearchResults img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.GetSearchResults p {
+    color: #655a56;
+}
+
+
+@media (max-width: 768px) {
+
+    
+    .GetSearchResults figure,
+    .GetSearchResults  h4,
+    .GetSearchResults p {
+        margin: 10px 5px;
+       
+    }
+    
+    
+    .GetSearchResults img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .GetSearchResults p {
+        color: #655a56;
+        font-size: 90%;
+    }
+}

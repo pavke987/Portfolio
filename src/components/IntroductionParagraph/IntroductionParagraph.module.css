@@ -1,0 +1,29 @@
+.IntroductionParagraph {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 55%;
+}
+
+.HeadingSecondary {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.IntroductionParagraph span {
+    font-size: 8rem;
+    letter-spacing: 5px;
+}
+
+.IntroductionParagraph p {
+    font-size: 120%;
+    line-height: 2;
+}
+
+@media (max-width:768px) {
+    .IntroductionParagraph {
+        margin-bottom: 5rem;
+        width: 80%;
+    }
+}

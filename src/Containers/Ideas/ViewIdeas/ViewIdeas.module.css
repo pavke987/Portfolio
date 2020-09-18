@@ -1,0 +1,14 @@
+.ViewIdeas {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+}
+
+@media (max-width: 768px) {
+    .ViewIdeas {
+        width: 94%;
+        flex-flow: column;
+    }
+}

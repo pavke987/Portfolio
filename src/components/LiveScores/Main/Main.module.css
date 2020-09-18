@@ -1,0 +1,13 @@
+.Main {
+    width: 100rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .Main {
+        width: 100%;
+    }
+} 

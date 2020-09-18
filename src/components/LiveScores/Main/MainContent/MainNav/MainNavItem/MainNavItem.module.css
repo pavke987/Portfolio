@@ -1,0 +1,44 @@
+.MainNavItem {
+    display: flex;
+    align-items: center;
+    background-color: lightcyan;
+    padding: 0 1rem;
+    margin-right: .5rem;
+    font-size: 1.2rem;
+    color: var(--color-text-1);
+    background-color: var(--color-background-5);
+    cursor: pointer;
+}
+
+.MainNavItem:hover {
+    background-color: var(--color-background-2);
+}
+
+.Selected {
+    display: flex;
+    align-items: center;
+    background-color: lightcyan;
+    padding: 0 1rem;
+    margin-right: .5rem;
+    font-size: 1.2rem;
+    background-color: var(--color-sport-secondary-body);
+    color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.GamesNum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    background-color: var( --color-background-9);
+    pointer-events: none;
+}
+
+.Selected .GamesNum {
+    background-color: var(--color-sport-tertiary);
+}

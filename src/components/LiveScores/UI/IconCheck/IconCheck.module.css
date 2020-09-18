@@ -1,0 +1,58 @@
+.IconHolder {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.IconCheck,
+.IconChecked {
+    margin-right: .5rem;
+    height: 1.8rem;
+    transition: all .3s;
+    cursor: pointer;
+    pointer-events: stroke;
+}
+
+.IconCheck {
+    fill: var(--color-text-1);
+}
+
+.IconChecked {
+    fill: var(--color-sport-primary);
+}
+
+path {
+    pointer-events: none;
+}
+
+
+.IconCheck:hover {
+    transform: scale(1.1);
+    fill: var(--color-text-1);
+}
+
+.IconChecked:hover {
+    transform: scale(1.1);
+    fill: var(--color-sport-secondary-body);
+}
+
+.ToolTipContainer {
+    width: 30rem;
+    position: absolute;
+    top: 2.2rem;
+    left: -2rem;
+    z-index: 10;
+    display: none;
+}
+
+.IconChecked:hover + .ToolTipContainer,
+.IconCheck:hover + .ToolTipContainer {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .IconCheck,
+.IconChecked {
+    margin-right: .2rem;
+}
+}

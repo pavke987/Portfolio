@@ -1,0 +1,6 @@
+.Layout {
+    display: flex;
+    padding-top: 30rem;
+   background-image: linear-gradient(to right bottom,#434343, #000000);
+   margin-top: -30rem;
+}

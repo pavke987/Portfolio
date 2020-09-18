@@ -1,0 +1,51 @@
+.HowTo {
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.HowTo h2 {
+    margin-top: 40px;
+    font-size: 130%;
+    font-weight: 600;
+    color: #F59A83;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.HowTo p {
+    width: 70%;
+    margin-top: 0;
+}
+
+.HowTo a {
+    text-decoration: none;
+}
+.HowTo button {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    outline: none;
+    border:none;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 300px;
+    background-image: linear-gradient(to right bottom, #f3ca62, #f37168);
+    transform: scale(1);
+    background-size: cover;
+    transition: transform 0.3s, background-image 0.3s;
+}
+
+.HowTo button:hover {
+    background-image: linear-gradient(to right bottom, #f0c046, #f1584d);
+    transform: scale(1.05);
+    background-size: cover;
+    cursor: pointer;
+  }
+  

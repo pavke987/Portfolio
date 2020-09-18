@@ -1,0 +1,73 @@
+.TitleResultList {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    min-height: 79vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #eee;
+    border: 2px solid #eee;
+}
+
+.TitleResultList div {
+    border-bottom: 2px solid #eee;
+}
+
+.TitleResultList li {
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.TitleResultList li:hover {
+    cursor: pointer;
+}
+
+.TitleResultList li:first-child{
+    position: relative;
+    margin-top: 30px;
+    color: #ffab00;
+}
+.TitleResultList li:first-child img{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    height: 150px;
+    width: 100px;
+    top: 10px;
+    left: 0;
+    z-index: 100;
+    margin-top: 30px;
+    transition: opacity 1s;
+}
+
+
+.TitleResultList li:first-child:hover img {
+    opacity: 1;
+    visibility: visible;
+}
+.Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+}
+.Buttons button {
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    color: #ffab00;
+}
+.Buttons button:hover {
+    cursor: pointer;
+    color: #eee;
+}
+
+@media (max-width: 768px) {
+    .TitleResultList {
+        overflow: scroll;
+    }
+}

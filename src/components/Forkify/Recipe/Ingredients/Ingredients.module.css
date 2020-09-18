@@ -1,0 +1,12 @@
+.Ingredients {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(231, 225, 225);
+    max-height: 500px;
+}
+
+
+
+

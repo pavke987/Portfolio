@@ -1,0 +1,22 @@
+.Introduction {
+    padding-top: 20rem;
+    margin-top: -20rem;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient( to right, rgba(56, 239, 125, 0.1) 50%,  rgba(185, 43, 39, 0.1) 50% ), linear-gradient(to right, rgba(0,0,0, 0.7), rgba(0,0,0,0.7)),  url('/image/pozadina-prva-strana.jpg');
+    background-size: cover;
+    flex-flow: column;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--color-gray-light-1);
+    transition: all 2s;
+
+}
+
+.HeadingSecondary {
+    margin-top: 10rem;
+    font-size: 4rem;
+    letter-spacing: .4rem;
+    font-weight: 300;
+    cursor: pointer;
+}

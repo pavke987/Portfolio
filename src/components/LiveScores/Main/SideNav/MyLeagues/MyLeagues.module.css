@@ -1,0 +1,50 @@
+.MyLeagues {
+    list-style: none;
+    color: var(--color-text-1);
+  
+}
+
+@keyframes grow {
+    from {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.LeagueItem {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s;
+    animation: grow .3s ease-in;
+}
+.LeagueItem:hover {
+    background-color: var( --color-background-9);
+} 
+
+.Logo {
+    height: 1.8rem;
+    margin: 0 1rem;
+}
+
+.LeagueName {
+    font-size: 1.1rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+
+.LeagueName:hover {
+    border-bottom: 1px solid var(--color-text-1);
+}
+
+
+

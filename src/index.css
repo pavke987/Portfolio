@@ -1,0 +1,133 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-yelow: #ffc70a;
+  --color-yelow-light:#ffcd29;
+  --color-yelow-dark: #ecc339;
+
+  --color-gray-light-1: #f2f2f2; 
+
+  
+
+    --color-sport-primary: #1b7700;
+    --color-sport-secondary-body: #085f00;
+    --color-sport-tertiary: #053600;
+    --color-sport-quaternary: #e6efe6;
+
+    --color-white: #fff;
+    --color-live: #cd0200;
+    --value-transparency-1: 0.3;
+    --value-transparency-2: 0.15;
+    --color-background-1: #fff;
+    --color-background-2: #e1e1e1;
+    --color-background-3: #fff;
+    --color-background-4: #e9e9e9;
+    --color-background-5: #e9e9e9;
+    --color-background-6: #ffe1af;
+    --color-background-7: #ffe1af;
+    --color-background-8: #f0f0f0;
+    --color-background-9: #d5d5d5;
+    --color-background-10: #f6f6f6;
+    --color-background-hover-1: #f2f2f2;
+    --color-background-hover-2: #d9d9d9;
+    --color-background-hover-3: #e9e9e9;
+    --color-background-highlight-1: #ffd8d8;
+    --color-background-highlight-2: #fcf0b7;
+    --color-background-highlight-3: #ffce99;
+    --color-background-highlight-4: #d9f7c7;
+    --color-background-highlight-5: #fdd;
+    --color-background-highlight-6: #f3f3f3;
+    --color-background-highlight-7: #eef6fa;
+    --color-background-highlight-8: #98f83f;
+    --color-text-1: #656565;
+    --color-text-2: #686868;
+    --color-text-3: #656565;
+    --color-text-4: #2d2d2d;
+    --color-text-5: #656565;
+    --color-text-highlight-1: #c00;
+    --color-text-highlight-2: #84705b;
+    --color-text-highlight-3: #1b7700;
+    --color-text-highlight-4: #0a0;
+    --color-text-highlight-5: #a00;
+    --color-border-1: #e5e5e5;
+    --color-border-2: rgba(0,0,0,0.1);
+    --color-border-3: rgba(0,0,0,0.1);
+    --color-border-4: #d5d5d5;
+    --color-border-5: #ccc;
+    --color-border-6: #8f8f8f;
+    --color-border-7: rgba(0,0,0,0.1);
+    --color-alpha-1: 0,0,0;
+    --color-alpha-2: 255,255,255;
+    --color-alpha-3: 240,240,240;
+    --color-alpha-4: 255,255,255;
+    --color-icon-1: #8f8f8f;
+    --color-betIcon-stroke: #8f8f8f;
+    --color-betIcon-text: #656565;
+    --color-stroke-myTeams: #656556;
+    --color-cricketServis: #7b081b;
+    --color-AmericanFootballServis: #834132;
+    --color-loading: #353c48;
+    --color-tooltip: #232323;
+    --color-skeleton-1: #f2f2f2;
+    --color-skeleton-2: #dcdcdc;
+    --color-skeleton-3: #f0f0f0;
+    --color-myGamesBubble: #d5d5d5;
+    --color-liveBettingStrip-background: #dcefce;
+    --color-liveBettingStrip-hover: #e8f8dc;
+    --color-liveBettingStrip-text: #4daa50;
+    --color-liveBettingStrip-button: #4eae50;
+    --color-darts-serve: #7b613a;
+    --color-footballGoal: #2d2d2d;
+    --color-floorballGoal: #2d2d2d;
+    --color-assist-background: #dadada;
+    --color-penalty: #cd0200;
+    --color-americanFootballBall: #3d3d3d;
+    --color-redCard: #d92a2f;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-white);
+}
+
+@media (max-width: 1500px) {
+   body {
+    padding: 0;
+   } 
+}
+
+@media (max-width: 768px) {
+  html {
+   font-size: 55%;
+  } 
+}
+@media (max-width: 500px) {
+  html {
+   font-size: 50%;
+  } 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
